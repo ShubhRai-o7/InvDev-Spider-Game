@@ -1,0 +1,93 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Electric : MonoBehaviour
+{
+    private LineRenderer lRend;
+    public Transform transformPointA;
+    //[HideInInspector] public Transform transformPointB;
+    private readonly int pointsCount = 5;
+    private readonly int half = 2;
+    private float randomness;
+    private Vector3[] points;
+
+    private readonly int pointIndexA = 0;
+    private readonly int pointIndexB = 1;
+    private readonly int pointIndexC = 2;
+    private readonly int pointIndexD = 3;
+    private readonly int pointIndexE = 4;
+
+    private readonly string mainTexture = "_MainTex";
+    private Vector2 mainTextureScale = Vector2.one;
+    private Vector2 mainTextureOffset = Vector2.one;
+
+    private float timer;
+    private float timerTimeOut = 0.05f;
+
+    private void Start ()
+    {
+        lRend = GetComponent<LineRenderer>();
+        points = new Vector3[pointsCount];
+        lRend.positionCount = pointsCount;
+        lRend.enabled = false;
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    public void ShootArc(float damage)
+    {
+        lRend.enabled = true;
+        timer += Time.deltaTime;
+        if (timer > timerTimeOut)
+        {
+            timer = 0;
+
+            points[pointIndexA] = transformPointA.position;
+            points[pointIndexE] = gameObject.GetComponent<TeslaCoil>().shootpoint;
+            points[pointIndexC] = GetCenter(points[pointIndexA], points[pointIndexE]);
+            points[pointIndexB] = GetCenter(points[pointIndexA], points[pointIndexC]);
+            points[pointIndexD] = GetCenter(points[pointIndexC], points[pointIndexE]);
+
+            float distance = Vector3.Distance(transformPointA.position, gameObject.GetComponent<TeslaCoil>().shootpoint) / points.Length;
+            mainTextureScale.x = distance;
+            mainTextureOffset.x = Random.Range(-randomness, randomness);
+            lRend.material.SetTextureScale(mainTexture, mainTextureScale);
+            lRend.material.SetTextureOffset(mainTexture, mainTextureOffset);
+
+            randomness = distance / (pointsCount);
+
+            SetRandomness();
+
+            lRend.SetPositions(points);
+        }
+    }
+    public void DisableArc()
+    {
+        lRend.enabled = false;
+    }
+    private void SetRandomness()
+    {
+        for (int i = 0; i < points.Length; i++)
+        {
+            if (i != pointIndexA && i != pointIndexE)
+            {
+                points[i].x += Random.Range(-randomness, randomness);
+                points[i].y += Random.Range(-randomness, randomness);
+                points[i].z += Random.Range(-randomness, randomness);
+            }
+        }
+    }
+
+    private Vector3 GetCenter(Vector3 a, Vector3 b)
+    {
+        return (a + b) / half;
+    }
+    public void SetLineWidth(float width)
+    {
+        lRend.startWidth = width;
+        lRend.endWidth = width;
+    }
+}

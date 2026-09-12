@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2775340345193542739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.857142
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.29249996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22857153
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6700001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_Name
+      value: MissileLauncherDropped
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      propertyPath: m_TagString
+      value: goons
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8545344783994737461}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6529254443409545489}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8659275389850727466}
+  m_SourcePrefab: {fileID: 100100000, guid: 1bbb54eacd3552b43b766cc097a4a1c6, type: 3}
+--- !u!1 &3045159605767178498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbb54eacd3552b43b766cc097a4a1c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2775340345193542739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8545344783994737461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045159605767178498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008549bdb14501646981f5d54fe36b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 2940171909205741986, guid: 007582c422b63544d94345045b673a56,
+    type: 3}
+  weaponDummyPrefab: {fileID: 1186291515034403998, guid: ad55325aebec07549a29fa5361e7ad11,
+    type: 3}
+--- !u!114 &6529254443409545489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045159605767178498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65282540027301e4b89584fda08d9302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
+--- !u!65 &8659275389850727466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045159605767178498}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4629907, y: 0.4030163, z: 1.3436154}
+  m_Center: {x: -0.1610092, y: -0.033637464, z: 0.18186}
